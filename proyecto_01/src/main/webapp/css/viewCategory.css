@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.header img{
+    padding: 10px;
+    height: 125px;
+    width: auto;
+}
+
+.title-header {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro-fecha{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.table-container table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.table-container td {
+    background-color: #f9f9f9;
+}
+
+.table-responsive {
+    width: 80%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.table-responsive h2 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-responsive th, .table-responsive td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-responsive th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.table-responsive td {
+    background-color: #f9f9f9;
+}
+
+.actions-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions-container a {
+    background-color: #E94B3C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.actions-container a:hover {
+    background-color: #cc4034;
+}
+
+.eliminarMovimiento {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

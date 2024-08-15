@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtro de Fecha</title>
+    <style>
+        .date-filter-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .date-filter-form label {
+            font-weight: bold;
+            color: #333;
+            width: 180px;
+        }
+
+        .date-filter-form input[type="datetime-local"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .date-filter-form input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .date-filter-form input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+
+<form action="ContabilidadController?ruta=filter" method="post" class="date-filter-form">
+    <input type="hidden" name="origen" value="${origen}">
+    <input type="hidden" name="cuentaId" value="${cuenta.idAccount}">
+    <input type="hidden" name="categoriaId" value="${categoria.idCategory}">
+    
+    <label for="fechaInicio">Fecha Inicio:</label>
+    <input type="datetime-local" id="fechaInicio" name="fechaInicio" value="${fechaInicio}" max="${currentDate}" />
+    
+    <label for="fechaFin">Fecha Fin:</label>
+    <input type="datetime-local" id="fechaFin" name="fechaFin" value="${fechaFin}" max="${currentDate}" />
+    
+    <input type="submit" value="Filtrar" />
+</form>
+
+</body>
+</html>
